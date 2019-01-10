@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'includes/_head.html' %}
+<body id="page-top">
+{% include 'includes/_navbar.html' %}
+<div id="wrapper">
+
+    <!-- Sidebar -->
+
+    {% include 'includes/_sidebar.html' %}
+
+    <div id="content-wrapper">
+
+        <div class="container-fluid">
+
+            {% block body %}{% endblock %}
+            {% include 'includes/_logout.html' %}
+
+        </div>
+        {% include 'includes/_footer.html' %}
+
+    </div>
+    <!-- /.content-wrapper -->
+    {% include 'includes/_bs_in.html' %}
+</div>
+
+</body>
+
+
+</html>
