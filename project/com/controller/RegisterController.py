@@ -6,5 +6,5 @@ from project.com.dao import conn_db
 def index():
     conn=conn_db()
     cursor=conn.cursor()
-    print(cursor.execute('SELECT * FROM restaurants').fetchall())
+    print(cursor.execute('SELECT * FROM restaurants'))
     return render_template('home.html')

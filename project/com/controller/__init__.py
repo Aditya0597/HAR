@@ -1,2 +1,3 @@
 import project.com.controller.LoginController
 import project.com.controller.RegisterController
+import project.com.controller.dashboardController

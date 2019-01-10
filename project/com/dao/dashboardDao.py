@@ -2,9 +2,9 @@ from project.com.dao import conn_db
 
 conn=conn_db()
 
-class byActivity:
+class dashboard:
     def empByActivity(self,act):
         cursor=conn.cursor()
-        cursor.execute('SELECT * FROM employee WHERE activity={}'.format(act))
+        cursor.execute("SELECT * FROM employees WHERE activity='{}'".format(act))
         data=cursor.fetchall()
         return data
