@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Dashboard{% block title %}{% endblock %}</title>
+    <title>Dashboard{{ title }}</title>
 
     <!-- Bootstrap core CSS-->
     <link href="http://127.0.0.1:5000/static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 
     <!-- Custom styles for this template-->
     <link href="http://127.0.0.1:5000/static/css/sb-admin.css" rel="stylesheet">
-    {% include 'includes/_bs_in.html' %}
+    {#    {% include 'includes/_bs_in.html' %}#}
 </head>
 
 <body id="page-top">
@@ -47,7 +47,7 @@
 
     </div>
     <!-- /.content-wrapper -->
-    {% include 'includes/_bs_in.html' %}
+    {#    {% include 'includes/_bs_in.html' %}#}
 </div>
 
 </body>

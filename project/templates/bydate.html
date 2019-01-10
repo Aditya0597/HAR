@@ -1,14 +1,14 @@
 {% extends 'layout.html' %}
 {% set sidebar=sidebar %}
-{% set title="-By Avctivity" %}
+{% set title="-By Date" %}
 {% block body %}
-    <form action="byactivity" method="POST">
+    <form action="bydate" method="POST">
         <div class="form-group">
             <label for="sel1">Select list (select one):</label>
-            <select class="form-control" id="sel1" style="width: 75%" name="act">
-                <option value="mop">Mop</option>
-                <option value="kitchen">Kitchen Cleaning</option>
-                <option value="corridor">Corridor Cleaning</option>
+            <select class="form-control" id="sel1" style="width: 75%" name="session">
+                <option value="morning">Morning</option>
+                <option value="noon">Noon</option>
+                <option value="evening">Evening</option>
             </select>
             <br>
             <button type="submit" name="submit">Submit</button>
